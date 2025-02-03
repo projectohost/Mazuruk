@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./calc.css" />
+    <title>Все про Рибу</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Світло-блакитний фон */
+            background-image: url('https://www.transparenttextures.com/patterns/diamond-sky.png'); /* Текстура, що нагадує воду */
+            background-repeat: repeat;
+        }
+        header {
+            background-color: #0077b6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #0096c7;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0096c7;
+            padding: 10px 0;
+
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            transition: transform 0.3s ease; /* Перехід для ефекту анімації */
+        }
+        section img:hover {
+            transform: translateY(-5px) scale(1.05); /* Ефект збільшення та підйому */
+        }
+        footer {
+            background-color: #0077b6;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        /* Стайли для галереї риб */
+        .gallery {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .gallery img {
+            width: 23%;
+            cursor: pointer;
+            transition: transform 0.4s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: translateX(10px) translateY(-5px) scale(1.1); /* Ефект плавання */
+        }
+
+        /* Різнокольоровий текст для кожної риби */
+        .salmon { color: #f28d8d; } /* Рожевий для лосося */
+        .perch { color: #8dc63f; } /* Зелений для окуня */
+        .ray { color: #4682b4; } /* Синій для ската */
+        .catfish { color: #6b4f4f; } /* Коричневий для сома */
+
+        /* Стиль для калькулятора */
+        #calculator {
+            background-color: #b3e0ff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        #calculator label {
+            font-size: 1.1em;
+        }
+        #calculator input, #calculator select {
+            padding: 8px;
+            font-size: 1.1em;
+            margin: 10px 0;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #0077b6;
+        }
+        #calculator button {
+            background-color: #0077b6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+        #calculator button:hover {
+            background-color: #0096c7;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Все про Рибу</h1>
+        <p>Дізнайтесь більше про різні види риб, їх середовище існування та цікаві факти!</p>
+    </header>
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="calculator.html">Калькулятор ціни</a>
+        <a href="facts.html" hidden>Цікаві факти</a>
+        <a href="#types">Види риб</a>
+        <a href="#habitats">Середовище існування</a>
+        <a href="#facts">Цікаві факти</a>
+    </nav>
+    <main>
+        <section id="types">
+            <h2 class="salmon">Види риб</h2>
+            <p>Риби бувають різних видів: морські, прісноводні, хижі, травоїдні тощо. Наприклад:</p>
+            <ul>
+                <li class="salmon">Лосось</li>
+                <li class="perch">Окунь</li>
+                <li class="ray">Скат</li>
+                <li class="catfish">Сом</li>
+            </ul>
+            <img src="https://st.depositphotos.com/1521357/2978/i/450/depositphotos_29787629-stock-photo-fish.jpg" alt="Різні види риб">
+        </section>
+        <section id="habitats">
+            <h2 class="ray">Середовище існування</h2>
+            <p>Риби живуть у різних середовищах: океанах, річках, озерах та навіть у невеликих ставках.</p>
+            <img src="https://st2.depositphotos.com/6877360/12021/i/450/depositphotos_120216130-stock-photo-isolated-crucian-carp-a-kind.jpg" alt="Місця існування риб">
+        </section>
+
+        <section id="gallery">
+            <h2>Галерея риб</h2>
+            <div class="gallery">
+                <img src="https://kupi-rakushku.od.ua/upload/image/html_article/losos1.png" alt="Лосось" title="Лосось">
+                <img src="https://static3.depositphotos.com/1000955/120/i/450/depositphotos_1209846-stock-photo-dorado-fish.jpg" alt="Окунь" title="Окунь">
+                <img src="https://cdn.create.vista.com/api/media/small/101806936/stock-photo-freshwater-fish-on-a-white-background" alt="Скат" title="Скат">
+                <img src="https://st2.depositphotos.com/1154952/10695/i/450/depositphotos_106958306-stock-photo-full-body-of-blue-marine.jpg" alt="Сом" title="Сом">
+            </div>
+        </section>
+
+        <section id="prices">
+            <h2 class="salmon">Ціни та вага риб</h2>
+            <ul>
+                <li><strong>Лосось:</strong> середня вага – 5 кг, ціна – 400 грн/кг</li>
+                <li><strong>Окунь:</strong> середня вага – 1.5 кг, ціна – 120 грн/кг</li>
+                <li><strong>Скат:</strong> середня вага – 7 кг, ціна – 600 грн/кг</li>
+                <li><strong>Сом:</strong> середня вага – 4 кг, ціна – 200 грн/кг</li>
+            </ul>
+
+            <section id="calculator">
+                <h2>Розрахунок вартості</h2>
+                <label for="fish-type">Оберіть рибу:</label>
+                <select id="fish-type">
+                    <option value="400">Лосось (400 грн/кг)</option>
+                    <option value="120">Окунь (120 грн/кг)</option>
+                    <option value="600">Скат (600 грн/кг)</option>
+                    <option value="200">Сом (200 грн/кг)</option>
+                </select>
+                <br><br>
+                <label for="weight">Вага (кг):</label>
+                <input type="number" id="weight" min="0" step="0.1">
+                <br><br>
+                <button onclick="calculatePrice()">Розрахувати</button>
+                <p id="result"></p>
+            </section>
+        </section>
+
+        <section id="facts">
+            <h2 class="ray">Цікаві факти</h2>
+            <p>Чи знали ви, що деякі види риб можуть світитися у темряві, а інші здатні жити на глибинах понад 8000 метрів?</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Все про Рибу. Всі права захищені.</p>
+        <p>Зв'язатися з нами: <a href="mailto:info@example.com">info@example.com</a></p>
+    </footer>
+
+    <script>
+        function calculatePrice() {
+            const pricePerKg = document.getElementById('fish-type').value;
+            const weight = document.getElementById('weight').value;
+            const total = pricePerKg * weight;
+            document.getElementById('result').textContent = `Вартість: ${total} грн`;
+        }
+    </script>
+</body>
+</html>
