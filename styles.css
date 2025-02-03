@@ -1,0 +1,107 @@
+/* Загальний скидання стилів */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Основні стилі для тіла */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Заголовок */
+        header {
+            background-color: #1e90ff;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Навігація */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #4682b4;
+            padding: 10px 0;
+
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            margin: 0 15px;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            background-color: #5f9ea0;
+            border-radius: 5px;
+        }
+
+        /* Основний контент */
+        main {
+            padding: 30px 15px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: #1e90ff;
+            margin-bottom: 10px;
+        }
+
+        section h3 {
+            font-size: 1.8rem;
+            margin-top: 20px;
+            color: #4682b4;
+        }
+
+        section ul {
+            list-style: inside;
+            padding-left: 20px;
+        }
+
+        section li {
+            font-size: 1.1rem;
+            margin: 8px 0;
+        }
+
+        /* Футер */
+        footer {
+            background-color: #1e90ff;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
