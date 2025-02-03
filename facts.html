@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./facts.css" />
+    <title>Все про Рибу</title>
+</head>
+<body>
+    <header>
+        <h1>Все про Рибу</h1>
+        <p>Дізнайтесь більше про різні види риб, їх середовище існування та цікаві факти!</p>
+    </header>
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="calculator.html">Калькулятор ціни</a>
+        <a href="facts.html" hidden>Цікаві факти</a>
+        <a href="#types">Види риб</a>
+        <a href="#habitats">Середовище існування</a>
+    </nav>
+    <main>
+        <section id="types">
+            <h2>Види риб</h2>
+            <p>На планеті існує понад 33 тисячі видів риб! Вони можуть бути як мікроскопічними, так і досягати кількох метрів у довжину.</p>
+            <img src="https://wiki.fishingplanet.com/images/a/ae/Grass_Carp.png" alt="Різні види риб">
+        </section>
+        <section id="habitats">
+            <h2>Середовище існування</h2>
+            <p>Риби живуть у різних умовах — від солоних океанів і прісних озер до підземних печер та арктичних вод.</p>
+            <img src="https://agronews.ua/wp-content/uploads/2021/02/630_360_1573485378-628-623x360.jpeg" alt="Середовище існування риб">
+        </section>
+        <section id="facts">
+            <h2>Цікаві факти про рибу</h2>
+            <ul>
+                <li>Риби з'явилися на Землі понад 500 мільйонів років тому і були одними з перших хребетних тварин.</li>
+                <li>У риб немає повік, тому вони ніколи не кліпають.</li>
+                <li>Акули — одні з найдавніших видів риб, їхні предки існували ще 400 мільйонів років тому.</li>
+                <li>Деякі види риб, наприклад, латимерія, вважаються "живими викопними", оскільки майже не змінилися за мільйони років.</li>
+                <li>Є риби, які можуть літати над водою (летючі риби) або навіть повзати по суші (мулистий стрибун).</li>
+                <li>Електричний вугор може генерувати електричний струм потужністю до 600 вольт!</li>
+                <li>Деякі риби мають дивовижну здатність змінювати стать. Наприклад, групери і клоунські риби можуть переходити з жіночої в чоловічу стать і навпаки.</li>
+                <li>Риба-камінь — одна з найотруйніших риб у світі. Її отрута може бути смертельною для людини.</li>
+                <li>Мозок акул здатний розпізнавати один запах із десяти мільйонів! Їхній нюх настільки гострий, що вони можуть відчути краплю крові в океані на відстані декількох кілометрів.</li>
+                <li>Деякі глибоководні риби, такі як чорний дракон (Black Dragonfish), мають біолюмінесцентні органи, які світяться в темряві, допомагаючи їм приваблювати здобич.</li>
+                <li>У світі існують "сплячі акули" (наприклад, гренландська акула), які живуть до 400 років і є одними з найбільш довгоживучих хребетних.</li>
+                <li>Золоті рибки (карасі) можуть виживати у воді без кисню, виробляючи алкоголь у своєму організмі для виживання в зимових умовах.</li>
+                <li>Є риби, які створюють музику! Самці риби-папуги видають звуки, щоб привабити самок.</li>
+                <li>Китайський осетер (одна з найдавніших риб) здатний вирости до 5 метрів у довжину і важити понад 450 кілограмів.</li>
+                <li>Риба-фугу — делікатес японської кухні, але її внутрішні органи містять сильнодіючу отруту, яка може вбити людину, якщо її неправильно приготувати.</li>
+            </ul>
+            <img src="https://files.oaiusercontent.com/file-HiecZWX9R3VtfCoDz11PsY?se=2024-12-18T13%3A21%3A37Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Da678e9af-6620-4ecb-823a-a975671bbe7b.webp&sig=RPNBAmo8cY3C7u/OEozmbJ7aZgY0CLXFyxtPm90gGCM%3D" alt="Цікаві факти про рибу">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Все про Рибу. Всі права захищені.</p>
+        <p>Зв'язатися з нами: <a href="mailto:info@example.com">info@example.com</a></p>
+    </footer>
+    <script>
+        const numParticles = 100;
+
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+            document.body.appendChild(particle);
+
+            const startX = Math.random() * window.innerWidth;
+            const startY = Math.random() * window.innerHeight;
+            const endX = Math.random() * window.innerWidth;
+            const endY = Math.random() * window.innerHeight * 2;
+
+            particle.style.left = `${startX}px`;
+            particle.style.top = `${startY}px`;
+            particle.style.setProperty('--x', `${endX - startX}px`);
+            particle.style.setProperty('--y', `${endY - startY}px`);
+
+            const duration = Math.random() * 4 + 2;
+            particle.style.animationDuration = `${duration}s`;
+
+            particle.addEventListener('animationend', () => {
+                particle.remove();
+            });
+        }
+
+        setInterval(createParticle, 150);
+    </script>
+</body>
+</html>
